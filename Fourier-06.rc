@@ -1,0 +1,109 @@
+//Script di risorse generato da Microsoft Developper Studio.
+//
+#include "FourierR-06.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+////////////////////////////////////////////////////////////
+//
+// Generato dalla risorsa TEXTINCLUDE 2.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "afxres.h"
+
+////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+///////////////////////////////////////////////////////////
+// Risorse in inglese
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+FOURIERMENU MENU DISCARDABLE
+BEGIN
+	POPUP "Dati Fourier"
+
+	BEGIN
+	 MENUITEM "Dati Fourier...", IDM_FOUR
+	 MENUITEM "Info Fourier...", IDM_ABOUT
+	 MENUITEM "Esci", IDM_EXIT
+	END
+END
+
+////////////////////////////////////////////////////////////
+//
+// Finestre di dialogo
+//
+
+ABOUTBOX DIALOG DISCARDABLE 14, 22, 200, 75
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "Informazioni"
+BEGIN
+ CTEXT "Una forma d'onda per serie di Fourier",-1,30,5,144,8
+ CTEXT "Applicazione MFC",-1,30,5,144,8
+ CTEXT "Di William H. Murray e Chris H. Pappas",-1,28,28,144,8
+ CTEXT "(c) Copyright 1997",201,68,38,83,8
+ DEFPUSHBUTTON "OK",IDOK,84,55,32,14,WS_GROUP
+END
+
+FOURIERDATA DIALOG DISCARDABLE 74,21,142,70
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "Dati Fourier"
+BEGIN
+ LTEXT "Titolo: ",-1,6,5,28,8,NOT WS_GROUP
+ EDITTEXT IDD_TITLE,33,1,106,12
+ LTEXT "Numero di termini: ",-1,6,23,70,8,NOT WS_GROUP
+ EDITTEXT IDD_TERMS,76,18,32,12
+ PUSHBUTTON "OK",IDOK,25,52,24,14
+ PUSHBUTTON "Cancel",IDCANCEL,89,53,28,14
+END
+
+#ifdef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+ "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+ "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+ "#include ""windows.h""\r\n"
+ "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+ "#include ""sfxres.h""\r\n"
+ "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+ "\r\n"
+ "\0"
+END
+
+#endif  //APSTUDIO_INVOKED
+
+#endif  // Risorse in inglese
+////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////
+//
+// Generato dalla risorsa TEXTINCLUDE 3.
+//
+
+////////////////////////////////////////////////////////////
+#endif  //no APSTUDIO_INVOKED
